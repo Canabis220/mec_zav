@@ -1,0 +1,138 @@
+DATA_BLOCK "DB_AI_Values"
+TITLE =
+VERSION : 0.1
+
+
+  STRUCT 	
+   SP : REAL ;	
+   SP1 : REAL ;	//1 - TIA_10_A,Отсутствует в задании
+   SP2 : REAL ;	//1 - TIA_10_B,Отсутствует в задании
+   SP3 : REAL ;	//1
+   LICA_10A : REAL ;	//1 - LL(DB121.DBX9.4),HL(DB121.DBX9.1)
+   LICA_10B : REAL ;	//1 - LL(DB121.DBX11.4),HL(DB121.DBX11.1)
+   PI_20 : REAL ;	//1 - LL(DB121.DBX13.4),ML(DB121.DBX13.2).HL(DB121.DBX13.1)
+   SP7 : REAL ;	//1
+   SP8 : REAL ;	//1
+   SP9 : REAL ;	//1
+   SP10 : REAL ;	//1
+   SP11 : REAL ;	//2 - LL(DB121.DBX23.4),HL(DB121.DBX23.1)
+   SP12 : REAL ;	//2
+   SP13 : REAL ;	//2
+   SP14 : REAL ;	//2
+   SP15 : REAL ;	//2
+   LICA_46K1 : REAL ;	//3 - LL(DB121.DBX33.4),ML(DB121.DBX33.2),HL(DB121.DBX33.1)
+   LICA_46K2 : REAL ;	//3 - LL(DB121.DBX35.4),ML(DB121.DBX35.2),HL(DB121.DBX35.1)
+   SP18 : REAL ;	//3
+   SP19 : REAL ;	//3
+   SP20 : REAL ;	//3
+   LICA_82A : REAL ;	//4 - LL(DB121.DBX43.4),HL(DB121.DBX43.1)
+   LICA_82B : REAL ;	//4 - LL(DB121.DBX45.4),HL(DB121.DBX45.1)
+   LICA_63A : REAL ;	//4 - LL(DB121.DBX47.4),HL(DB121.DBX47.1),VHL(DB121.DBX47.0)
+   SP24 : REAL ;	//4,Расходомер   - LL(DB121.DBX49.4),HL(DB121.DBX49.1)
+   TIC_10C : REAL ;	//1
+   LICA_63B : REAL ;	//4
+   SP27 : REAL ;	//4
+   LICA_63C : REAL ;	//4
+   SP29 : REAL ;	//4
+   SP30 : REAL ;	//4
+   SP31 : REAL ;	//5 - LL(DB121.DBX63.4),ML(DB121.DBX63.2),HL(DB121.DBX63.1),VHL(DB121.DBX63.0)
+   SP32 : REAL ;	//5
+   SP33 : REAL ;	//5
+   SP34 : REAL ;	//5
+   SP35 : REAL ;	//5
+   SP36 : REAL ;	//6
+   SP37 : REAL ;	//6
+   SP38 : REAL ;	//6
+   SP39 : REAL ;	//6
+   SP40 : REAL ;	//6
+   SP41 : REAL ;	//7 - VLL(DB121.DBX83.5),LL(DB121.DBX83.4),ML(DB121.DBX83.2),HL(DB121.DBX83.1)
+   SP42 : REAL ;	//7
+   SP43 : REAL ;	//7
+   SP44 : REAL ;	//7
+   SP45 : REAL ;	//7
+   SP46 : REAL ;	
+   SP47 : REAL ;	
+   SP48 : REAL ;	
+   SP49 : REAL ;	
+   TIC_PR1_1_2 : REAL ;	//9
+   TIC_PR1_3_4 : REAL ;	//9
+   TIC_PR2_1_2 : REAL ;	//9
+   TIC_PR2_3_4_5 : REAL ;	//9
+   P_FLUEL_FILTER : REAL ;	//Давление бензина на выходе фильтра
+   LICA45A : REAL ;	
+   SP56 : REAL ;	
+   SP57 : REAL ;	
+   SP58 : REAL ;	
+   SP59 : REAL ;	
+   SP60 : REAL ;	
+   SP61 : REAL ;	
+   SP62 : REAL ;	
+   SP63 : REAL ;	
+  END_STRUCT ;	
+BEGIN
+   SP := 0.000000e+000; 
+   SP1 := 0.000000e+000; 
+   SP2 := 0.000000e+000; 
+   SP3 := 0.000000e+000; 
+   LICA_10A := 0.000000e+000; 
+   LICA_10B := 0.000000e+000; 
+   PI_20 := 0.000000e+000; 
+   SP7 := 0.000000e+000; 
+   SP8 := 0.000000e+000; 
+   SP9 := 0.000000e+000; 
+   SP10 := 0.000000e+000; 
+   SP11 := 0.000000e+000; 
+   SP12 := 0.000000e+000; 
+   SP13 := 0.000000e+000; 
+   SP14 := 0.000000e+000; 
+   SP15 := 0.000000e+000; 
+   LICA_46K1 := 0.000000e+000; 
+   LICA_46K2 := 0.000000e+000; 
+   SP18 := 0.000000e+000; 
+   SP19 := 0.000000e+000; 
+   SP20 := 0.000000e+000; 
+   LICA_82A := 0.000000e+000; 
+   LICA_82B := 0.000000e+000; 
+   LICA_63A := 0.000000e+000; 
+   SP24 := 0.000000e+000; 
+   TIC_10C := 0.000000e+000; 
+   LICA_63B := 0.000000e+000; 
+   SP27 := 0.000000e+000; 
+   LICA_63C := 0.000000e+000; 
+   SP29 := 0.000000e+000; 
+   SP30 := 0.000000e+000; 
+   SP31 := 0.000000e+000; 
+   SP32 := 0.000000e+000; 
+   SP33 := 0.000000e+000; 
+   SP34 := 0.000000e+000; 
+   SP35 := 0.000000e+000; 
+   SP36 := 0.000000e+000; 
+   SP37 := 0.000000e+000; 
+   SP38 := 0.000000e+000; 
+   SP39 := 0.000000e+000; 
+   SP40 := 0.000000e+000; 
+   SP41 := 0.000000e+000; 
+   SP42 := 0.000000e+000; 
+   SP43 := 0.000000e+000; 
+   SP44 := 0.000000e+000; 
+   SP45 := 0.000000e+000; 
+   SP46 := 0.000000e+000; 
+   SP47 := 0.000000e+000; 
+   SP48 := 0.000000e+000; 
+   SP49 := 0.000000e+000; 
+   TIC_PR1_1_2 := 0.000000e+000; 
+   TIC_PR1_3_4 := 0.000000e+000; 
+   TIC_PR2_1_2 := 0.000000e+000; 
+   TIC_PR2_3_4_5 := 0.000000e+000; 
+   P_FLUEL_FILTER := 0.000000e+000; 
+   LICA45A := 0.000000e+000; 
+   SP56 := 0.000000e+000; 
+   SP57 := 0.000000e+000; 
+   SP58 := 0.000000e+000; 
+   SP59 := 0.000000e+000; 
+   SP60 := 0.000000e+000; 
+   SP61 := 0.000000e+000; 
+   SP62 := 0.000000e+000; 
+   SP63 := 0.000000e+000; 
+END_DATA_BLOCK
+
