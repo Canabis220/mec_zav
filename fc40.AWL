@@ -108,6 +108,15 @@ L002: CALL "Analog Input" (
            NUM                      := 55);
 //-----------------------------------
 
+//----------LICA_10C---------------
+      CALL "Analog Input" (
+           PW                       := "LICA_10C",//LICA_10C
+           NUM                      := 56);
+//----------LICA_10D----------------
+      CALL "Analog Input" (
+           PW                       := "LICA_10D",//LICA_10D                   
+           NUM                      := 57);
+
 
 
 //--------9--T_MAX_203---------------
