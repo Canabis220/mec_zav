@@ -1,0 +1,127 @@
+FUNCTION "CALL Analog" : VOID
+TITLE =Вызов Аналоговых входов
+//Есть возможность обслуживания 32 Аналоговых входов
+VERSION : 0.1
+
+BEGIN
+NETWORK
+TITLE =
+
+//-----------------1---LICA_10A-------------
+      CALL "Analog Input" (
+           PW                       := "LICA_10A",
+           NUM                      := 4);
+//-----------------1---LICA_10B-------------
+      CALL "Analog Input" (
+           PW                       := "LICA_10B",
+           NUM                      := 5);
+//-----------------1---PI_20----------------
+      CALL "Analog Input" (
+           PW                       := "PI_20",
+           NUM                      := 6);
+
+      L     19; //разрешения для аварий
+      T     DB121.DBB   12; 
+
+//--------3---LICA_46K1-------------
+      CALL "Analog Input" (
+           PW                       := "LICA_46K1",
+           NUM                      := 16);
+//--------3---LICA_46K2-------------
+      CALL "Analog Input" (
+           PW                       := "LICA_46K2",
+           NUM                      := 17);
+//--------3-------------------------
+
+
+//--------------4---LICA_82A--------
+      CALL "Analog Input" (
+           PW                       := "LICA_82A",
+           NUM                      := 21);
+//--------------4---LICA_82B--------
+      CALL "Analog Input" (
+           PW                       := "LICA_82B",
+           NUM                      := 22);
+//--------------4---LICA_63A--------
+      CALL "Analog Input" (
+           PW                       := "LICA_63A",
+           NUM                      := 23);
+//--------------4----FE_82----------
+//      CALL  "Analog Input"
+//       PW :="FE_82"
+//       NUM:=24
+
+//----1---TIC_WO--Оборотное водоснабжение--
+//      CALL  "Analog Input"
+//       PW :="TIC_WO"
+//       NUM:=25
+//-----------------1----------------
+
+//-------4--LICA_63B----------------
+      CALL "Analog Input" (
+           PW                       := "LICA_63B",
+           NUM                      := 26);
+//-----------------4----------------
+//      CALL  "Analog Input"
+//       PW :=
+//       NUM:=27
+//-----------------4----------------
+      CALL "Analog Input" (
+           PW                       := "LICA_63C",
+           NUM                      := 28);
+//-----------------4----------------
+
+//-------9-TIC_PR1_1\2 Позиция24-----
+      CALL "Analog Input" (
+           PW                       := "TIC_PR1_1/2",
+           NUM                      := 50);
+//-------9-TIC_PR1_3\4 Позиция24-----
+      CALL "Analog Input" (
+           PW                       := "TIC_PR1_3/4",
+           NUM                      := 51);
+//--------9-TIC_PR2_1/2--------------
+      CALL "Analog Input" (
+           PW                       := "TIC_PR2_1/2",
+           NUM                      := 52);
+//--------9-TIC_PR2_3/4/5------------
+      CALL "Analog Input" (
+           PW                       := "TIC_PR2_3/4/5",
+           NUM                      := 53);
+//--------9--T_MIN_170---------------
+      CALL "Analog Input" (
+           PW                       := "Давл.бенз.на вых.фильтра",
+           NUM                      := 54);
+//--------LICA_45A---------------
+      L     "LICA_45A"; 
+      L     10; 
+      *I    ; 
+      T     LW    20; 
+      L     LW    20; 
+      L     30000; 
+      >I    ; 
+      JCN   L002; 
+      L     0; 
+      T     LW    20; 
+
+L002: CALL "Analog Input" (
+           PW                       := LW    20,//"LICA_45A"                  //         КЕА 01_07_2011
+           NUM                      := 55);
+//-----------------------------------
+
+
+
+//--------9--T_MAX_203---------------
+//      CALL  "Analog Input"
+//       PW :="T_MAX_203"
+//       NUM:=55
+//-----------------------------------
+//      CALL  "Analog Input"
+//       PW :="PIW322"                    //PIW 432 - "Давл.бенз.на вых.фильтра"
+//       NUM:=56
+NETWORK
+TITLE =
+
+      BE    ; 
+
+END_FUNCTION
+
