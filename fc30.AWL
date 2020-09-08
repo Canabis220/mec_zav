@@ -108,8 +108,8 @@ TITLE =Модуль дискретных выходов №1
       CALL "MOTOR_CMEX" (
            AA                       := "P5613EC_1_AA",
            AM                       := "P5613EC_1_AM",
-           KM                       := "P5613EC_3_KM",
-           TH                       := "P5613EC_3_TH",
+           KM                       := "P5613EC_1_KM",
+           TH                       := "P5613EC_1_TH",
            En_Horn                  := TRUE,
            NUM                      := 11,
            LMP                      := L      0.0);
@@ -125,8 +125,8 @@ TITLE =Модуль дискретных выходов №1
       CALL "MOTOR_CMEX" (
            AA                       := "P5613EC_2_AA",
            AM                       := "P5613EC_2_AM",
-           KM                       := "P5613EC_4_KM",
-           TH                       := "P5613EC_4_TH",
+           KM                       := "P5613EC_2_KM",
+           TH                       := "P5613EC_2_TH",
            En_Horn                  := TRUE,
            NUM                      := 12,
            LMP                      := L      0.0);
@@ -142,46 +142,41 @@ TITLE =Модуль дискретных выходов №1
       CALL "MOTOR_CMEX" (
            AA                       := "P5613EC_3_AA",
            AM                       := "P5613EC_3_AM",
-           KM                       := "P5613EC_5_KM",
-           TH                       := "P5613EC_5_TH",
+           KM                       := "P5613EC_3_KM",
+           TH                       := "P5613EC_3_TH",
            En_Horn                  := TRUE,
            NUM                      := 13,
            LMP                      := L      0.0);
-//---------------1---P5613EC_4--------
-//      CALL  "Motors"
-//       AA     :="P5613EC_4_AA"
-//       AM     :="P5613EC_4_AM"
-//       KM     :="P5613EC_6_KM"
-//       TH     :="P5613EC_6_TH"
-//       En_Horn:=TRUE
-//       NUM    :=14
-//       LMP    :=L0.0
-      CALL "MOTOR_CMEX" (
+//-----------------P5613EC_4--------
+      CALL "Motors" (
            AA                       := "P5613EC_4_AA",
            AM                       := "P5613EC_4_AM",
-           KM                       := "P5613EC_6_KM",
-           TH                       := "P5613EC_6_TH",
+           KM                       := "P5613EC_4_KM",
+           TH                       := "P5613EC_4_TH",
            En_Horn                  := TRUE,
            NUM                      := 14,
            LMP                      := L      0.0);
+
 //----------------------------
-//      CALL  "Motors"
-//       AA     :=
-//       AM     :=
-//       KM     :=
-//       TH     :=
-//       En_Horn:=
+//  CALL  "Motors"
+//       AA     :="TPO11_AA"
+//       AM     :="TPO11_AM"
+//       KM     :="TPO11_KM"
+//       TH     :="TPO11_TH"
+//       En_Horn:=TRUE
 //       NUM    :=15
-//       LMP    :=
+//       LMP    :=L0.0
 //----------------------------
-//      CALL  "Motors"
-//       AA     :=
-//       AM     :=
-//       KM     :=
-//       TH     :=
-//       En_Horn:=
-//       NUM    :=16
-//       LMP    :=
+      CALL "Motors" (
+           AA                       := "P5613EC_5_AA",
+           AM                       := "P5613EC_5_AM",
+           KM                       := "P5613EC_5_KM",
+           TH                       := "P5613EC_5_TH",
+           En_Horn                  := TRUE,
+           NUM                      := 16,
+           LMP                      := L      0.0);
+
+
 //-------------2--P3746A-----------
 //      CALL  "Motors"
 //       AA     :="P3746A_AA"
@@ -556,60 +551,60 @@ G991: T     "COMMON".UV_PK70_2_KM;
 //       En_Horn:=
 //       NUM    :=46
 //       LMP    :=
-//----------------------------
-//      CALL  "Motors"
-//       AA     :=
-//       AM     :=
-//       KM     :=
-//       TH     :=
-//       En_Horn:=
-//       NUM    :=47
-//       LMP    :=
-//----------------------------
-//      CALL  "Motors"
-//       AA     :=
-//       AM     :=
-//       KM     :=
-//       TH     :=
-//       En_Horn:=
-//       NUM    :=48
-//       LMP    :=
-//----------------TPO_11-----8-------
-//      CALL  "Motors"
-//       AA     :="TPO11_AA"
-//       AM     :="TPO11_AM"
-//       KM     :="TPO11_KM"
-//       TH     :="TPO11_TH"
-//       En_Horn:=TRUE
-//       NUM    :=49
-//       LMP    :=L0.0
-//----------------TPO_12------8------
-//      CALL  "Motors"
-//       AA     :="TPO12_AA"
-//       AM     :="TPO12_AM"
-//       KM     :="TPO12_KM"
-//       TH     :="TPO12_TH"
-//       En_Horn:=TRUE
-//       NUM    :=50
-//       LMP    :=L0.0
-//----------------NORYA_13----8------
-//      CALL  "Motors"
-//       AA     :="NORYA13_AA"
-//       AM     :="NORYA13_AM"
-//       KM     :="NORYA13_KM"
-//       TH     :="NORYA13_TH"
-//       En_Horn:=TRUE
-//       NUM    :=51
-//       LMP    :=L0.0
-//----------------TPO_14------8------
-//      CALL  "Motors"
-//       AA     :="TPO14_AA"
-//       AM     :="TPO14_AM"
-//       KM     :="TPO14_KM"
-//       TH     :="TPO14_TH"
-//       En_Horn:=TRUE
-//       NUM    :=52
-//       LMP    :=L0.0
+//-----------OV_P_V11-----------------
+      CALL "Motors" (
+           AA                       := "P_V11_AA",
+           AM                       := "P_V11_AM",
+           KM                       := "P_V11_KM",
+           TH                       := "P_V11_TH",
+           En_Horn                  := TRUE,
+           NUM                      := 47,
+           LMP                      := L      0.0);
+//------------OV_P_V12----------------
+      CALL "Motors" (
+           AA                       := "P_V12_AA",
+           AM                       := "P_V12_AM",
+           KM                       := "P_V12_KM",
+           TH                       := "P_V12_TH",
+           En_Horn                  := TRUE,
+           NUM                      := 48,
+           LMP                      := L      0.0);
+//--------------OV_P_V13-----8-------
+      CALL "Motors" (
+           AA                       := "P_V13_AA",
+           AM                       := "P_V13_AM",
+           KM                       := "P_V13_KM",
+           TH                       := "P_V13_TH",
+           En_Horn                  := TRUE,
+           NUM                      := 49,
+           LMP                      := L      0.0);
+//----------------OV_P_V14------8------
+      CALL "Motors" (
+           AA                       := "P_V14_AA",
+           AM                       := "P_V14_AM",
+           KM                       := "P_V14_KM",
+           TH                       := "P_V14_TH",
+           En_Horn                  := TRUE,
+           NUM                      := 50,
+           LMP                      := L      0.0);
+//----------------OV_P_V15----8------
+      CALL "Motors" (
+           AA                       := "P_V15_AA",
+           AM                       := "P_V15_AM",
+           KM                       := "P_V15_KM",
+           TH                       := "P_V15_TH",
+           En_Horn                  := TRUE,
+           NUM                      := 51,
+           LMP                      := L      0.0);
+//----------------OV_P_V16------8------
+      CALL "Motors" (
+           AA                       := "P_V16_AA",
+           AM                       := "P_V16_AM",
+           KM                       := "P_V16_KM",
+           TH                       := "P_V16_TH",
+           En_Horn                  := TRUE,
+           NUM                      := 52,
+           LMP                      := L      0.0);
 
 NETWORK
 TITLE =
